@@ -2,83 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A.P.J Abdul Kalam</title>
+    <title>Job Application Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="content">
-        <section class="top_section">
-          <div class="image_container">
-            <img src="apjs.jpg" alt="tribute" />
+      <div class="apply_box">
+        <h1>
+          Job Application
+          <span class="title_small">(Web)</span>
+        </h1>
+        <form action="">
+          <div class="form_container">
+            <div class="form_control">
+              <label for="first_name"> First Name </label>
+              <input
+                id="first_name"
+                name="first_name"
+                placeholder="Enter First Name..."
+              />
+            </div>
+            <div class="form_control">
+              <label for="last_name"> Last Name </label>
+              <input
+                id="last_name"
+                name="last_name"
+                placeholder="Enter Last Name..."
+              />
+            </div>
+            <div class="form_control">
+              <label for="email"> Email </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email..."
+              />
+            </div>
+            <div class="form_control">
+              <label for="job_role"> Job Role </label>
+              <select id="job_role" name="job_role">
+                <option value="">Select Job Role</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="full_stack">Full Stack Developer</option>
+                <option value="ui_ux">UI UX Designer</option>
+              </select>
+            </div>
+            <div class="textarea_control">
+              <label for="address"> Address </label>
+              <textarea
+                id="address"
+                name="address"
+                row="4"
+                cols="50"
+                placeholder="Enter Address"
+              ></textarea>
+            </div>
+            <div class="form_control">
+              <label for="city"> City </label>
+              <input id="city" name="city" placeholder="Enter City Name..." />
+            </div>
+            <div class="form_control">
+              <label for="pincode"> Pincode </label>
+              <input
+                type="number"
+                id="pincode"
+                name="pincode"
+                placeholder="Enter Pincode Name..."
+              />
+            </div>
+            <div class="form_control">
+              <label for="date"> Date </label>
+              <input value="date" type="date" id="date" name="date" />
+            </div>
+            <div class="form_control">
+              <label for="upload"> Upload Your CV </label>
+              <input type="file" id="upload" name="upload" />
+            </div>
           </div>
-          <div>
-            <h1>A.P.J Abdul Kalam</h1>
-            <h4>1931-2015</h4>
+          <div class="button_container">
+            <button type="submit">Apply Now</button>
           </div>
-        </section>
-        <section class="about_section">
-          <h2>Missile Man Of India</h2>
-          <p>
-            <b>Avul Pakir Jainulabdeen Abdul Kalam</b> in 15 October 1931-27
-            July 2015 was an Indian aerospace scientist and statesman who served
-            as the president of India from 2002 to 2007. Born and raised in a
-            Muslim family in Rameswaram, Tamil Nadu, Kalam studied physics and
-            aerospace engineering. He spent the next four decades as a scientist
-            and science administrator, mainly at the Defence Research and
-            Development Organisation (DRDO) and Indian Space Research
-            Organisation (ISRO) and was intimately involved in India's civilian
-            space programme and military missile development efforts. He was
-            known as the "Missile Man of India" for his work on the development
-            of ballistic missile and launch vehicle technology. He also played a
-            pivotal organisational, technical, and political role in Pokhran-II
-            nuclear tests in 1998, India's second such test after the first test
-            in 1974.
-          </p>
-        </section>
-        <section class="biography_section">
-          <h3>Biographies</h3>
-          <ul>
-            <li>
-              Eternal Quest: Life and Times of Dr Kalam by S Chandra; Pentagon
-              Publishers, 2002.
-            </li>
-            <li>
-              President A P J Abdul Kalam by R K Pruthi; Anmol Publications,
-              2002.
-            </li>
-            <li>
-              A P J Abdul Kalam: The Visionary of India by K Bhushan, G Katyal;
-              A P H Pub Corp, 2002.
-            </li>
-            <li>
-              A Little Dream (documentary film) by P. Dhanapal; Minveli Media
-              Works Private Limited, 2008.
-            </li>
-            <li>
-              The Kalam Effect: My Years with the President by P M Nair; Harper
-              Collins, 2008.
-            </li>
-            <li>
-              My Days With Mahatma Abdul Kalam by Fr A K George; Novel
-              Corporation, 2009.
-            </li>
-            <li>
-              A.P.J. Abdul Kalam: A Life by Arun Tiwari; Haper Collins, 2015.
-            </li>
-            <li>
-              The People's President: Dr A P J Abdul Kalam by S M Khan;
-              Bloomsbury Publishing, 2016.
-            </li>
-          </ul>
-        </section>
-        <footer>
-          <p>
-            Read more about A. P. J. Abdul Kalam on
-            <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">Wikipedia.</a>
-          </p>
-        </footer>
+        </form>
       </div>
     </div>
   </body>
